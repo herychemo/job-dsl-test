@@ -5,7 +5,6 @@ pipelineJob("Quick Test Pipeline") {
         cpsScm {
             scm {
                 git {
-                    credentials('ssh')
                     remote {
                         name("QuickTest")
                         url("git@gitlab.com:herychemo/QuickTestJenkinsFile.git")
@@ -14,5 +13,8 @@ pipelineJob("Quick Test Pipeline") {
                 scriptPath('Jenkinsfile')
             }
         }
+    }
+    wrappers {
+        sshAgent('ssh')
     }
 }
