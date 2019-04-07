@@ -1,22 +1,17 @@
-def project_name = "Quick Test Pipeline"
-def repo = "git@gitlab.com:herychemo/QuickTestJenkinsFile.git"
-def repo_name = "QuickTest"
-def cred_id = 'ssh'
-def script_path = 'Jenkinsfile'
 
-pipelineJob(project_name) {
+pipelineJob("Quick Test Pipeline") {
     definition {
 
         cpsScm {
             scm {
                 git {
-                    credentials(cred_id)
+                    credentials('ssh')
                     remote {
-                        name(repo_name)
-                        url(repo)
+                        name("QuickTest")
+                        url("git@gitlab.com:herychemo/QuickTestJenkinsFile.git")
                     }
                 }
-                scriptPath(script_path)
+                scriptPath('Jenkinsfile')
             }
         }
     }
