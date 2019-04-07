@@ -8,13 +8,12 @@ pipelineJob("Quick Test Pipeline") {
                     remote {
                         name("QuickTest")
                         url("git@gitlab.com:herychemo/QuickTestJenkinsFile.git")
+                        credentials('ssh')
                     }
                 }
                 scriptPath('Jenkinsfile')
             }
         }
     }
-    wrappers {
-        sshAgent('ssh')
-    }
+
 }
