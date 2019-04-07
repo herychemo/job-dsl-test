@@ -10,7 +10,7 @@ pipelineJob(project_name) {
         cpsScm {
             scm {
                 git {
-                    credentialsId(cred_id)
+                    credentials(cred_id)
                     remote {
                         name(repo_name)
                         url(repo)

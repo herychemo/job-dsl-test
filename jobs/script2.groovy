@@ -14,7 +14,7 @@ multibranchPipelineJob(project_name) {
                 name(repo_name)
                 url(repo)
             }
-            credentialsId(cred_id)
+            credentials(cred_id)
             includes('*')
         }
     }
