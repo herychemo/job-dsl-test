@@ -6,9 +6,6 @@ script_path = 'Jenkinsfile'
 
 pipelineJob(project_name) {
     definition {
-        triggers {
-            scn('* * * * *')
-        }
 
         cpsScm {
             scm {
