@@ -5,11 +5,8 @@ multibranchPipelineJob("Quick Test MultiBranch pipeline") {
     }
     branchSources {
         git {
-            remote {
-                name('QuickTest')
-                url("git@gitlab.com:herychemo/QuickTestJenkinsFile.git")
-                credentials('ssh')
-            }
+            remote ("git@gitlab.com:herychemo/QuickTestJenkinsFile.git")
+            credentialsId('ssh')
             includes('*')
         }
     }
