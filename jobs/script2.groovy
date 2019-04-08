@@ -10,6 +10,11 @@ multibranchPipelineJob("Quick Test MultiBranch pipeline") {
             includes('*')
         }
     }
+    factory {
+        workflowBranchProjectFactory {
+            scriptPath('someScript_JenkinsFile')
+        }
+    }
     orphanedItemStrategy {
         discardOldItems {
             numToKeep(20)

@@ -11,7 +11,7 @@ pipelineJob("Quick Test Pipeline") {
                         credentials('ssh')
                     }
                 }
-                scriptPath('Jenkinsfile')
+                scriptPath('someScript_JenkinsFile')
             }
         }
     }
