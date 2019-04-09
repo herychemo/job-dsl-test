@@ -1,5 +1,5 @@
 
-pipelineJob("Quick Test Pipeline") {
+pipelineJob("Some Script Pipeline") {
     definition {
 
         cpsScm {

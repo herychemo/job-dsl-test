@@ -1,5 +1,5 @@
 
-multibranchPipelineJob("Quick Test MultiBranch pipeline 2") {
+multibranchPipelineJob("Some Script MultiBranch Pipeline") {
     triggers {
         periodic(1)
     }
@@ -12,7 +12,7 @@ multibranchPipelineJob("Quick Test MultiBranch pipeline 2") {
     }
     factory {
         workflowBranchProjectFactory {
-            scriptPath('otherScript_JenkinsFile')
+            scriptPath('someScript_JenkinsFile')
         }
     }
     orphanedItemStrategy {
