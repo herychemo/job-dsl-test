@@ -1,8 +1,5 @@
 
 multibranchPipelineJob("Stop Java Worker") {
-    triggers {
-        periodic(1)
-    }
     branchSources {
         git {
             remote ("git@gitlab.com:herychemo/QuickTestJenkinsFile.git")
