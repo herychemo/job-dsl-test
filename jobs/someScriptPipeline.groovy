@@ -11,7 +11,7 @@ pipelineJob("Some Script Pipeline") {
                         credentials('ssh')
                     }
                 }
-                scriptPath('someScript_JenkinsFile')
+                scriptPath('someScript/someScript_JenkinsFile')
             }
         }
     }

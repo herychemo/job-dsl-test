@@ -12,7 +12,7 @@ multibranchPipelineJob("Some Script MultiBranch Pipeline") {
     }
     factory {
         workflowBranchProjectFactory {
-            scriptPath('someScript_JenkinsFile')
+            scriptPath('someScript/someScript_JenkinsFile')
         }
     }
     orphanedItemStrategy {
