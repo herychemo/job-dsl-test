@@ -3,7 +3,7 @@ multibranchPipelineJob("Start Java Worker") {
     branchSources {
         git {
             remote ("git@gitlab.com:herychemo/QuickTestJenkinsFile.git")
-            credentialsId('ssh')
+            credentialsId('git-ssh')
             includes('*')
         }
     }

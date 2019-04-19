@@ -8,7 +8,7 @@ pipelineJob("Some Script Pipeline") {
                     remote {
                         name("QuickTest")
                         url("git@gitlab.com:herychemo/QuickTestJenkinsFile.git")
-                        credentials('ssh')
+                        credentials('git-ssh')
                     }
                 }
                 scriptPath('someScript/someScript_JenkinsFile')
