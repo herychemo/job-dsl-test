@@ -1,7 +1,7 @@
 
 multibranchPipelineJob("Bash Script MultiBranch Pipeline") {
     triggers {
-        periodic(1)
+        cron("* * * * *")
     }
     branchSources {
         git {

@@ -1,7 +1,7 @@
 
 multibranchPipelineJob("C++ Binary MultiBranch Pipeline") {
     triggers {
-        periodic(1)
+        cron("* * * * *")
     }
     branchSources {
         git {
