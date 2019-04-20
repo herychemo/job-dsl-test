@@ -1,5 +1,5 @@
 
-pipelineJob("Some Script Pipeline") {
+pipelineJob("Bash Script Pipeline") {
     definition {
 
         cpsScm {
@@ -11,7 +11,7 @@ pipelineJob("Some Script Pipeline") {
                         credentials('git-ssh')
                     }
                 }
-                scriptPath('someScript/someScript_JenkinsFile')
+                scriptPath('bashScript/Jenkinsfile')
             }
         }
     }
